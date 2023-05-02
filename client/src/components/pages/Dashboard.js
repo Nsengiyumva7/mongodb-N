@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const Dashboard = () => {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div className="container">
@@ -76,4 +76,4 @@ const Navbar = () => {
 	);
 };
 
-export default Navbar;
+export default Dashboard;

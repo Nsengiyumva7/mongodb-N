@@ -2,6 +2,8 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const crudRoutes = require("./routes/crudRoutes");
+const AuthRoute = require('./routes/Auth')
+
 const mongoose = require('mongoose');
 const PORT = process.env.PORT || 8080;
 
@@ -23,6 +25,6 @@ app.use((req, res, next) => {
 });
 
 app.use("/crud", crudRoutes);
-//app.use("/api/auth", authRoute);
+app.use("/api", AuthRoute);
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT}...`));
