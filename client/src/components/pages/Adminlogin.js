@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import './log.css';
 
-export const Login = (props) => {
+export const Adminlogin = (props) => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -18,7 +18,7 @@ export const Login = (props) => {
     }
 
     try {
-      const response = await fetch("/api/login", {
+      const response = await fetch("/api/loginn", {
         method: "POST",
         body: JSON.stringify({ email, password }),
         headers: {
@@ -31,7 +31,7 @@ export const Login = (props) => {
         console.log(data);
         localStorage.setItem("token", data.token);
         alert('ok')
-        navigate("/crud/new");
+        navigate("/dashboard");
       } else {
         const data = await response.json();
         setErrorMessage(data.message || "Login failed");
@@ -71,4 +71,4 @@ export const Login = (props) => {
   );
 };
 
-export default Login;
+export default Adminlogin;

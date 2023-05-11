@@ -8,17 +8,17 @@ body {
 -------------------------------------------------- */
 html {
   position: relative;
-  min-height: 100%;
+  min-height: 150%;
 }
 body {
   /* Margin bottom by footer height */
   margin-bottom: 300px;
-  align-items: left;
+  align-items: center;
 }
 .footer {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 87%;
   /* Set the fixed height of the footer here */
   height: 30px;
 }
@@ -26,7 +26,7 @@ body {
 /* Taller footer on small screens */
 @media (max-width: 567em) {
     body {
-      margin-bottom: 700px;
+      margin-bottom: 80px;
     }
     .footer {
       height: 200px;
@@ -37,8 +37,8 @@ body {
 -------------------------------------------------- */
 footer {
   padding-top: 30px;
-  background-color: #292c2f;
-  color: #bbb;
+  background-color: #dadfe4;
+  color: #1b1919;
   align-items: left;
 }
 

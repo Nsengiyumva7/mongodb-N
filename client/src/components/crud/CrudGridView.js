@@ -28,6 +28,7 @@ function CrudGridView() {
 				</p>
 			</h2>
 			<hr />
+			<Link to="/">back to Home</Link>
 			<div>
 				<div className="d-flex flex-wrap">
 					{cruds.map((crud) => {

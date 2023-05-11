@@ -10,37 +10,46 @@
   
   .auth-form-container, .login-form, .register-form {
     display: flex;
+    justify-content: center;
     flex-direction: column;
+    align-items: center;
+      
   }
   
-  @media screen and (min-width: 600px) {
+  /* @media screen  {
     .auth-form-container {
-      padding: 5rem;
-      border: 1px solid white;
-      border-radius: 10px;
-      margin: 0.5rem;
+      padding: 10px;
+      border: 1px solid rgb(233, 24, 24);
+      border-radius: 5px;
+      margin: 10px;
+      align-items: center;
+      justify-content: center;
+      
     }
-  }
+  } */
   
   label {
-    text-align: left;
-    padding: 10px;
+    text-align: center;
+    padding: 5px;
+    
   }
   
   input {
-    margin: 0.5rem 0;
+    margin: 0.5rem ;
     padding: 10px;
-    border: none;
+    border: 1px solid rgb(54, 39, 39);
+    
     border-radius: 10px;
   }
   
   button {
     border: none;
-    background-color: rgb(121, 94, 94);
+    
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
     color: #0c0a0f;
+    
   }
   
   .link-btn {
@@ -48,5 +57,5 @@
     color: rgb(39, 23, 23);
     text-decoration: underline;
   }
-
+  
 

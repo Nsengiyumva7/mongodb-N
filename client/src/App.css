@@ -116,3 +116,27 @@
 	background-color: #d2e82d;
 }
 /* ======= Navbar Toggler ====== */
+
+body {
+	background-image: url('../src/components/assets/background.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+  }
+
+.App{
+      width:100%;
+	  height: auto;
+      display: flex;
+	  flex-direction: column;
+	  font-family: Arial, Helvetica, sans-serif;
+	  padding: 0px;
+	  margin: 0px;
+}
+
+
+
+.footer-toggler {
+	border: 0 !important;
+}

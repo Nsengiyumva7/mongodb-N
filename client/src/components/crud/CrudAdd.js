@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { post } from "axios";
 import { useNavigate } from "react-router-dom";
+
 
 function CrudAdd(props) {
 	const initialState = {
@@ -14,6 +15,11 @@ function CrudAdd(props) {
 	const [crud, setCrud] = useState(initialState);
 
 	const navigate = useNavigate();
+	useEffect(()=>{
+		if(!localStorage.getItem('token')){
+		 
+		}
+	 },[])
 
 	function handleSubmit(event) {
 		event.preventDefault();
@@ -37,9 +43,11 @@ function CrudAdd(props) {
 		navigate("/crud");
 	}
 
+
 	return (
 		<div className="container" style={{ maxWidth: "400px" }}>
-			<h1>Create User</h1>
+			<h1>APPLICATION FORM </h1>
+			<h2>Employees</h2>
 			<hr />
 			<form onSubmit={handleSubmit}>
 				<div className="form-group">
@@ -123,8 +131,14 @@ function CrudAdd(props) {
 					</button>
 				</div>
 			</form>
+			<button onClick={()=> {
+				localStorage.removeItem('token')
+			}}> Log out</button>
 		</div>
+		
 	);
 }
 
 export default CrudAdd;
+
+//log out button must be putten here?
